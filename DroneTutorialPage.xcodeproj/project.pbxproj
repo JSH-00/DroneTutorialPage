@@ -1,0 +1,590 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		57BCABD9251C5315008C5125 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 57BCABD8251C5315008C5125 /* AppDelegate.m */; };
+		57BCABDC251C5315008C5125 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 57BCABDB251C5315008C5125 /* SceneDelegate.m */; };
+		57BCABDF251C5315008C5125 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 57BCABDE251C5315008C5125 /* ViewController.m */; };
+		57BCABE2251C5315008C5125 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57BCABE0251C5315008C5125 /* Main.storyboard */; };
+		57BCABE4251C5318008C5125 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 57BCABE3251C5318008C5125 /* Assets.xcassets */; };
+		57BCABE7251C5318008C5125 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57BCABE5251C5318008C5125 /* LaunchScreen.storyboard */; };
+		57BCABEA251C5318008C5125 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 57BCABE9251C5318008C5125 /* main.m */; };
+		57BCABF4251C5318008C5125 /* DroneTutorialPageTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 57BCABF3251C5318008C5125 /* DroneTutorialPageTests.m */; };
+		57BCABFF251C5318008C5125 /* DroneTutorialPageUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 57BCABFE251C5318008C5125 /* DroneTutorialPageUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		57BCABF0251C5318008C5125 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 57BCABCC251C5315008C5125 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 57BCABD3251C5315008C5125;
+			remoteInfo = DroneTutorialPage;
+		};
+		57BCABFB251C5318008C5125 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 57BCABCC251C5315008C5125 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 57BCABD3251C5315008C5125;
+			remoteInfo = DroneTutorialPage;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		57BCABD4251C5315008C5125 /* DroneTutorialPage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DroneTutorialPage.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		57BCABD7251C5315008C5125 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		57BCABD8251C5315008C5125 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		57BCABDA251C5315008C5125 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		57BCABDB251C5315008C5125 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		57BCABDD251C5315008C5125 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		57BCABDE251C5315008C5125 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		57BCABE1251C5315008C5125 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		57BCABE3251C5318008C5125 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		57BCABE6251C5318008C5125 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		57BCABE8251C5318008C5125 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		57BCABE9251C5318008C5125 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		57BCABEF251C5318008C5125 /* DroneTutorialPageTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DroneTutorialPageTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		57BCABF3251C5318008C5125 /* DroneTutorialPageTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DroneTutorialPageTests.m; sourceTree = "<group>"; };
+		57BCABF5251C5318008C5125 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		57BCABFA251C5318008C5125 /* DroneTutorialPageUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DroneTutorialPageUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		57BCABFE251C5318008C5125 /* DroneTutorialPageUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DroneTutorialPageUITests.m; sourceTree = "<group>"; };
+		57BCAC00251C5318008C5125 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		57BCABD1251C5315008C5125 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		57BCABEC251C5318008C5125 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		57BCABF7251C5318008C5125 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		57BCABCB251C5315008C5125 = {
+			isa = PBXGroup;
+			children = (
+				57BCABD6251C5315008C5125 /* DroneTutorialPage */,
+				57BCABF2251C5318008C5125 /* DroneTutorialPageTests */,
+				57BCABFD251C5318008C5125 /* DroneTutorialPageUITests */,
+				57BCABD5251C5315008C5125 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		57BCABD5251C5315008C5125 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				57BCABD4251C5315008C5125 /* DroneTutorialPage.app */,
+				57BCABEF251C5318008C5125 /* DroneTutorialPageTests.xctest */,
+				57BCABFA251C5318008C5125 /* DroneTutorialPageUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		57BCABD6251C5315008C5125 /* DroneTutorialPage */ = {
+			isa = PBXGroup;
+			children = (
+				57BCABD7251C5315008C5125 /* AppDelegate.h */,
+				57BCABD8251C5315008C5125 /* AppDelegate.m */,
+				57BCABDA251C5315008C5125 /* SceneDelegate.h */,
+				57BCABDB251C5315008C5125 /* SceneDelegate.m */,
+				57BCABDD251C5315008C5125 /* ViewController.h */,
+				57BCABDE251C5315008C5125 /* ViewController.m */,
+				57BCABE0251C5315008C5125 /* Main.storyboard */,
+				57BCABE3251C5318008C5125 /* Assets.xcassets */,
+				57BCABE5251C5318008C5125 /* LaunchScreen.storyboard */,
+				57BCABE8251C5318008C5125 /* Info.plist */,
+				57BCABE9251C5318008C5125 /* main.m */,
+			);
+			path = DroneTutorialPage;
+			sourceTree = "<group>";
+		};
+		57BCABF2251C5318008C5125 /* DroneTutorialPageTests */ = {
+			isa = PBXGroup;
+			children = (
+				57BCABF3251C5318008C5125 /* DroneTutorialPageTests.m */,
+				57BCABF5251C5318008C5125 /* Info.plist */,
+			);
+			path = DroneTutorialPageTests;
+			sourceTree = "<group>";
+		};
+		57BCABFD251C5318008C5125 /* DroneTutorialPageUITests */ = {
+			isa = PBXGroup;
+			children = (
+				57BCABFE251C5318008C5125 /* DroneTutorialPageUITests.m */,
+				57BCAC00251C5318008C5125 /* Info.plist */,
+			);
+			path = DroneTutorialPageUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		57BCABD3251C5315008C5125 /* DroneTutorialPage */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 57BCAC03251C5318008C5125 /* Build configuration list for PBXNativeTarget "DroneTutorialPage" */;
+			buildPhases = (
+				57BCABD0251C5315008C5125 /* Sources */,
+				57BCABD1251C5315008C5125 /* Frameworks */,
+				57BCABD2251C5315008C5125 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DroneTutorialPage;
+			productName = DroneTutorialPage;
+			productReference = 57BCABD4251C5315008C5125 /* DroneTutorialPage.app */;
+			productType = "com.apple.product-type.application";
+		};
+		57BCABEE251C5318008C5125 /* DroneTutorialPageTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 57BCAC06251C5318008C5125 /* Build configuration list for PBXNativeTarget "DroneTutorialPageTests" */;
+			buildPhases = (
+				57BCABEB251C5318008C5125 /* Sources */,
+				57BCABEC251C5318008C5125 /* Frameworks */,
+				57BCABED251C5318008C5125 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				57BCABF1251C5318008C5125 /* PBXTargetDependency */,
+			);
+			name = DroneTutorialPageTests;
+			productName = DroneTutorialPageTests;
+			productReference = 57BCABEF251C5318008C5125 /* DroneTutorialPageTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		57BCABF9251C5318008C5125 /* DroneTutorialPageUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 57BCAC09251C5318008C5125 /* Build configuration list for PBXNativeTarget "DroneTutorialPageUITests" */;
+			buildPhases = (
+				57BCABF6251C5318008C5125 /* Sources */,
+				57BCABF7251C5318008C5125 /* Frameworks */,
+				57BCABF8251C5318008C5125 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				57BCABFC251C5318008C5125 /* PBXTargetDependency */,
+			);
+			name = DroneTutorialPageUITests;
+			productName = DroneTutorialPageUITests;
+			productReference = 57BCABFA251C5318008C5125 /* DroneTutorialPageUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		57BCABCC251C5315008C5125 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1150;
+				ORGANIZATIONNAME = JSH;
+				TargetAttributes = {
+					57BCABD3251C5315008C5125 = {
+						CreatedOnToolsVersion = 11.5;
+					};
+					57BCABEE251C5318008C5125 = {
+						CreatedOnToolsVersion = 11.5;
+						TestTargetID = 57BCABD3251C5315008C5125;
+					};
+					57BCABF9251C5318008C5125 = {
+						CreatedOnToolsVersion = 11.5;
+						TestTargetID = 57BCABD3251C5315008C5125;
+					};
+				};
+			};
+			buildConfigurationList = 57BCABCF251C5315008C5125 /* Build configuration list for PBXProject "DroneTutorialPage" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 57BCABCB251C5315008C5125;
+			productRefGroup = 57BCABD5251C5315008C5125 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				57BCABD3251C5315008C5125 /* DroneTutorialPage */,
+				57BCABEE251C5318008C5125 /* DroneTutorialPageTests */,
+				57BCABF9251C5318008C5125 /* DroneTutorialPageUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		57BCABD2251C5315008C5125 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				57BCABE7251C5318008C5125 /* LaunchScreen.storyboard in Resources */,
+				57BCABE4251C5318008C5125 /* Assets.xcassets in Resources */,
+				57BCABE2251C5315008C5125 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		57BCABED251C5318008C5125 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		57BCABF8251C5318008C5125 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		57BCABD0251C5315008C5125 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				57BCABDF251C5315008C5125 /* ViewController.m in Sources */,
+				57BCABD9251C5315008C5125 /* AppDelegate.m in Sources */,
+				57BCABEA251C5318008C5125 /* main.m in Sources */,
+				57BCABDC251C5315008C5125 /* SceneDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		57BCABEB251C5318008C5125 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				57BCABF4251C5318008C5125 /* DroneTutorialPageTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		57BCABF6251C5318008C5125 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				57BCABFF251C5318008C5125 /* DroneTutorialPageUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		57BCABF1251C5318008C5125 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 57BCABD3251C5315008C5125 /* DroneTutorialPage */;
+			targetProxy = 57BCABF0251C5318008C5125 /* PBXContainerItemProxy */;
+		};
+		57BCABFC251C5318008C5125 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 57BCABD3251C5315008C5125 /* DroneTutorialPage */;
+			targetProxy = 57BCABFB251C5318008C5125 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		57BCABE0251C5315008C5125 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				57BCABE1251C5315008C5125 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		57BCABE5251C5318008C5125 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				57BCABE6251C5318008C5125 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		57BCAC01251C5318008C5125 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		57BCAC02251C5318008C5125 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		57BCAC04251C5318008C5125 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J7DR2LJWWJ;
+				INFOPLIST_FILE = DroneTutorialPage/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = JSH.DroneTutorialPage;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		57BCAC05251C5318008C5125 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J7DR2LJWWJ;
+				INFOPLIST_FILE = DroneTutorialPage/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = JSH.DroneTutorialPage;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		57BCAC07251C5318008C5125 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J7DR2LJWWJ;
+				INFOPLIST_FILE = DroneTutorialPageTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = JSH.DroneTutorialPageTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DroneTutorialPage.app/DroneTutorialPage";
+			};
+			name = Debug;
+		};
+		57BCAC08251C5318008C5125 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J7DR2LJWWJ;
+				INFOPLIST_FILE = DroneTutorialPageTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = JSH.DroneTutorialPageTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DroneTutorialPage.app/DroneTutorialPage";
+			};
+			name = Release;
+		};
+		57BCAC0A251C5318008C5125 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J7DR2LJWWJ;
+				INFOPLIST_FILE = DroneTutorialPageUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = JSH.DroneTutorialPageUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DroneTutorialPage;
+			};
+			name = Debug;
+		};
+		57BCAC0B251C5318008C5125 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J7DR2LJWWJ;
+				INFOPLIST_FILE = DroneTutorialPageUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = JSH.DroneTutorialPageUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DroneTutorialPage;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		57BCABCF251C5315008C5125 /* Build configuration list for PBXProject "DroneTutorialPage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				57BCAC01251C5318008C5125 /* Debug */,
+				57BCAC02251C5318008C5125 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		57BCAC03251C5318008C5125 /* Build configuration list for PBXNativeTarget "DroneTutorialPage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				57BCAC04251C5318008C5125 /* Debug */,
+				57BCAC05251C5318008C5125 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		57BCAC06251C5318008C5125 /* Build configuration list for PBXNativeTarget "DroneTutorialPageTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				57BCAC07251C5318008C5125 /* Debug */,
+				57BCAC08251C5318008C5125 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		57BCAC09251C5318008C5125 /* Build configuration list for PBXNativeTarget "DroneTutorialPageUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				57BCAC0A251C5318008C5125 /* Debug */,
+				57BCAC0B251C5318008C5125 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 57BCABCC251C5315008C5125 /* Project object */;
+}
