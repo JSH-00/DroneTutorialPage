@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		577047712520D3CC004B16A3 /* DroneTutorialCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 577047702520D3CC004B16A3 /* DroneTutorialCollectionViewController.m */; };
+		577047772520D407004B16A3 /* DroneTutorialCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 577047762520D407004B16A3 /* DroneTutorialCollectionViewCell.m */; };
 		57BCABD9251C5315008C5125 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 57BCABD8251C5315008C5125 /* AppDelegate.m */; };
 		57BCABDF251C5315008C5125 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 57BCABDE251C5315008C5125 /* ViewController.m */; };
 		57BCABE2251C5315008C5125 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57BCABE0251C5315008C5125 /* Main.storyboard */; };
@@ -35,6 +37,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5770476F2520D3CC004B16A3 /* DroneTutorialCollectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DroneTutorialCollectionViewController.h; sourceTree = "<group>"; };
+		577047702520D3CC004B16A3 /* DroneTutorialCollectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DroneTutorialCollectionViewController.m; sourceTree = "<group>"; };
+		577047752520D407004B16A3 /* DroneTutorialCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DroneTutorialCollectionViewCell.h; sourceTree = "<group>"; };
+		577047762520D407004B16A3 /* DroneTutorialCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DroneTutorialCollectionViewCell.m; sourceTree = "<group>"; };
 		57BCABD4251C5315008C5125 /* DroneTutorialPage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DroneTutorialPage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		57BCABD7251C5315008C5125 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		57BCABD8251C5315008C5125 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -103,6 +109,10 @@
 			children = (
 				57BCABD7251C5315008C5125 /* AppDelegate.h */,
 				57BCABD8251C5315008C5125 /* AppDelegate.m */,
+				577047752520D407004B16A3 /* DroneTutorialCollectionViewCell.h */,
+				577047762520D407004B16A3 /* DroneTutorialCollectionViewCell.m */,
+				5770476F2520D3CC004B16A3 /* DroneTutorialCollectionViewController.h */,
+				577047702520D3CC004B16A3 /* DroneTutorialCollectionViewController.m */,
 				57BCABDD251C5315008C5125 /* ViewController.h */,
 				57BCABDE251C5315008C5125 /* ViewController.m */,
 				57BCABE0251C5315008C5125 /* Main.storyboard */,
@@ -263,6 +273,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				57BCABDF251C5315008C5125 /* ViewController.m in Sources */,
+				577047772520D407004B16A3 /* DroneTutorialCollectionViewCell.m in Sources */,
+				577047712520D3CC004B16A3 /* DroneTutorialCollectionViewController.m in Sources */,
 				57BCABD9251C5315008C5125 /* AppDelegate.m in Sources */,
 				57BCABEA251C5318008C5125 /* main.m in Sources */,
 			);
