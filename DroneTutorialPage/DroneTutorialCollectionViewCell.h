@@ -7,11 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "HCTutorial.h"
 NS_ASSUME_NONNULL_BEGIN
 
 @interface DroneTutorialCollectionViewCell : UICollectionViewCell
-
+@property (nonatomic, weak)UIImageView * thumbnailImage;
+- (void)setConfig:(HCTutorial *)tutorial;
 @end
 
 NS_ASSUME_NONNULL_END

@@ -8,24 +8,24 @@
 
 #import "DroneTutorialCollectionViewController.h"
 #import "DroneTutorialCollectionViewCell.h"
+#import <AFNetworking.h>
+#import "HCTutorial.h"
 #define fDeviceHeight ([UIScreen mainScreen].bounds.size.height)
 #define fDeviceWidth ([UIScreen mainScreen].bounds.size.width)
 
 @interface DroneTutorialCollectionViewController ()
 @property (nonatomic ,strong) NSMutableArray * tutorialArray;
 @property (nonatomic, strong) UICollectionView * tutorialCollectionView;
-@property (nonatomic, strong) UICollectionView * collectionView;
 @end
 
-
 @implementation DroneTutorialCollectionViewController
-
 static NSString * const reuseIdentifier = @"TutorialCell";
 
 - (void)viewDidLoad {
     
     [super viewDidLoad];
     [self.view addSubview:self.tutorialCollectionView];
+    [self reloadTutorialList];
 }
 
 #pragma mark <UICollectionViewDataSource>
@@ -36,15 +36,18 @@ static NSString * const reuseIdentifier = @"TutorialCell";
 
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
-//    return self.tutorialArray.count;
-    return 4;
+    return self.tutorialArray.count;
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     UICollectionViewCell *cell = [UICollectionViewCell new];
     cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"TcellID" forIndexPath:indexPath];
+    DroneTutorialCollectionViewCell * tutorialCell = [DroneTutorialCollectionViewCell new];
+    tutorialCell = (DroneTutorialCollectionViewCell *)cell;
+    [tutorialCell setConfig:[self.tutorialArray objectAtIndex:indexPath.row]];
     return cell;
 }
+
 #pragma mark init tutorialCollectionView
 - (UICollectionView *)tutorialCollectionView
 {
@@ -54,7 +57,7 @@ static NSString * const reuseIdentifier = @"TutorialCell";
         flowLayout.itemSize = CGSizeMake(fDeviceWidth - 6, 203);
         flowLayout.minimumInteritemSpacing = 8;
         
-        self.tutorialCollectionView = [[UICollectionView alloc]initWithFrame:CGRectMake(0,70, fDeviceWidth, fDeviceHeight) collectionViewLayout:flowLayout];
+        self.tutorialCollectionView = [[UICollectionView alloc]initWithFrame:CGRectMake(0,70, fDeviceWidth, fDeviceHeight - 70) collectionViewLayout:flowLayout];
         [self.tutorialCollectionView registerClass:[DroneTutorialCollectionViewCell class] forCellWithReuseIdentifier:@"TcellID"];
         
         self.tutorialCollectionView.delegate = self;
@@ -66,34 +69,28 @@ static NSString * const reuseIdentifier = @"TutorialCell";
     }
     return _tutorialCollectionView;
 }
-#pragma mark <UICollectionViewDelegate>
 
-/*
- // Uncomment this method to specify if the specified item should be highlighted during tracking
- - (BOOL)collectionView:(UICollectionView *)collectionView shouldHighlightItemAtIndexPath:(NSIndexPath *)indexPath {
- return YES;
- }
- */
+#pragma mark reload JSON 数据
+- (void)reloadTutorialList
+{
+    self.tutorialArray = [NSMutableArray new];
+    AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
+    manager.responseSerializer = [AFJSONResponseSerializer serializer];
+    manager.responseSerializer.acceptableContentTypes = [NSSet setWithObject:@"text/html"]; //指定接收信号为image/png
+    [manager GET:@"https://zerozerorobotics.com/api/v1/showcase/no-scene.json?skip=0&take=9" parameters:nil progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        NSMutableArray * tutorialDictionaryArray = responseObject;
+        for(int i = 0; i < tutorialDictionaryArray.count; i++)
+        {
+            HCTutorial * tutorial = [[HCTutorial alloc]initWithDictionary:[tutorialDictionaryArray objectAtIndex:i]];
+            [self.tutorialArray addObject:tutorial];
+        }
+        NSLog(@"请求成功");
+        [self.tutorialCollectionView reloadData];
 
-/*
- // Uncomment this method to specify if the specified item should be selected
- - (BOOL)collectionView:(UICollectionView *)collectionView shouldSelectItemAtIndexPath:(NSIndexPath *)indexPath {
- return YES;
- }
- */
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        NSLog(@"请求失败--%@",error);
+    }];
 
-/*
- // Uncomment these methods to specify if an action menu should be displayed for the specified item, and react to actions performed on the item
- - (BOOL)collectionView:(UICollectionView *)collectionView shouldShowMenuForItemAtIndexPath:(NSIndexPath *)indexPath {
- return NO;
- }
- 
- - (BOOL)collectionView:(UICollectionView *)collectionView canPerformAction:(SEL)action forItemAtIndexPath:(NSIndexPath *)indexPath withSender:(id)sender {
- return NO;
- }
- 
- - (void)collectionView:(UICollectionView *)collectionView performAction:(SEL)action forItemAtIndexPath:(NSIndexPath *)indexPath withSender:(id)sender {
- 
- }
- */
+    [self.tutorialCollectionView reloadData];
+}
 @end
