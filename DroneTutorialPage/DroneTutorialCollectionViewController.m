@@ -24,6 +24,14 @@ static NSString * const reuseIdentifier = @"TutorialCell";
 - (void)viewDidLoad {
     
     [super viewDidLoad];
+    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
+    [self.navigationController.navigationBar setBarTintColor:[UIColor blackColor]];
+    UILabel *titleLabel = [[UILabel alloc] initWithFrame:CGRectZero];
+    titleLabel.text=@"发现";
+    titleLabel.textColor = [UIColor whiteColor];
+    titleLabel.adjustsFontSizeToFitWidth=YES;
+
+    self.navigationItem.titleView = titleLabel;
     [self.view addSubview:self.tutorialCollectionView];
     [self reloadTutorialList];
 }
