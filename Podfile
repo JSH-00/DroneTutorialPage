@@ -8,6 +8,7 @@ target 'DroneTutorialPage' do
   # Pods for DroneTutorialPage
   pod 'AFNetworking', '~> 3.0'
   pod 'SDWebImage', '~> 5.0'
+  pod 'Aspects'
   target 'DroneTutorialPageTests' do
     inherit! :search_paths
     # Pods for testing
