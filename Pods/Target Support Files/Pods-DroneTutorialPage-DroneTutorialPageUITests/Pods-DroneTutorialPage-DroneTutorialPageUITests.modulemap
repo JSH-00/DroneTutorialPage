@@ -1,0 +1,6 @@
+framework module Pods_DroneTutorialPage_DroneTutorialPageUITests {
+  umbrella header "Pods-DroneTutorialPage-DroneTutorialPageUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

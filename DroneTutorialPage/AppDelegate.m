@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-//#import "DroneTutorialCollectionViewController.h"
+#import "DroneTutorialCollectionViewController.h"
 
 @interface AppDelegate ()
 
@@ -18,12 +18,12 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-//    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
-//
-//    DroneTutorialCollectionViewController *vc1 = [DroneTutorialCollectionViewController new];
-//    UINavigationController *vc1_NA = [[UINavigationController alloc] initWithRootViewController:vc1];
-//    self.window.rootViewController = vc1_NA;
-//    [self.window makeKeyAndVisible];
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+
+    DroneTutorialCollectionViewController *vc1 = [DroneTutorialCollectionViewController new];
+    UINavigationController *vc1_NA = [[UINavigationController alloc] initWithRootViewController:vc1];
+    self.window.rootViewController = vc1_NA;
+    [self.window makeKeyAndVisible];
     return YES;
 }
 - (void)applicationWillResignActive:(UIApplication *)application{
